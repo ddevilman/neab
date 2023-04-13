@@ -72,9 +72,17 @@ padding: 10px}
         <input placeholder="endereço de e-mail"style="border: 3px solid; width: 300px; height: 30px; border-radius: 5px;";>
         <br><br><button id="cadastrar">Cadastrar</button>
         <input type="hidden" name="accessKey" value="2abfe1b7-15b0-4983-a4ee-f386d1facd89">
-        
+        <div id="mensagemCadastro"></div>
+        document.getElementById("mensagemCadastro").innerHTML = "Obrigado por se cadastrar!";
       <br>
-       
+      const form = document.getElementById("cadastro-form");
+      const mensagem = document.getElementById("mensagem");
+      
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        mensagem.style.display = "block";
+        form.reset();
+      });
         <div class="caixa2">
       
     <br ><em style="color: whitesmoke;">Núcleo de Estudos Afro-Brasileiros-NEAB<br>
