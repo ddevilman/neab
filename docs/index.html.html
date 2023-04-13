@@ -2,6 +2,13 @@
 <html lang="pt-br">
   
 <head>
+  <script>
+    document.getElementById('cadastrar').addEventListener('click', function() {
+      var email = document.getElementById('email').value;
+      console.log('O endereço de e-mail do usuário é: ' + email);
+      alert('Obrigado por se cadastrar! Você receberá nossas atualizações em breve.');
+    });
+  </script>
   <title> Núcleo de Estudos Afro Brasileiros </title>
   
 </head>
@@ -64,9 +71,11 @@ padding: 10px}
           <p> <style></style></p>
           <img src= "https://pbs.twimg.com/media/FtnJQ0lXgAcBH1m?format=png&name=small"; height="250px"> <br>
         </content-info></div><br>
-        <strong style="color: whitesmoke;">Receba nossas atualizações, cadastre seu e-mail. </strong><br><br><input placeholder="endereço de e-mail">
-        <button>Cadastrar</button>
-   
+        
+        <input id="email" placeholder="endereço de e-mail">
+        <button id="cadastrar">Cadastrar</button>
+        
+        
       <br>
        
         <div class="caixa2">
