@@ -68,21 +68,22 @@ padding: 10px}
           <img src= "https://pbs.twimg.com/media/FtnJQ0lXgAcBH1m?format=png&name=small"; height="250px"> <br>
         </content-info></div><br>
         <form action="https://api.staticforms.xyz/submit" method="post"></form>
-        <strong style="color: whitesmoke; font-size: 25px"; >Cadastre-se e receba nossas atualizações.</strong> <br><br> 
-        <input placeholder="endereço de e-mail"style="border: 3px solid; width: 300px; height: 30px; border-radius: 5px;";>
-        <br><br><button id="cadastrar">Cadastrar</button>
-        <input type="hidden" name="accessKey" value="2abfe1b7-15b0-4983-a4ee-f386d1facd89">
-        <div id="mensagemCadastro"></div>
-        document.getElementById("mensagemCadastro").innerHTML = "Obrigado por se cadastrar!";
-      <br>
-      const form = document.getElementById("cadastro-form");
-      const mensagem = document.getElementById("mensagem");
+        <div class="container">
+            <strong style="font-size:25px; color:whitesmoke";>Receba nossas atualizações </strong>
+            <form target="_blank" action="https://formsubmit.co/luizgomes@ufgd.edu.br" method="POST">
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Nome completo" required>
+                  <br><br>
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                  </div>
+                </div>
+              </div><br><br>
+                 <button type="submit" class="btn btn-lg btn-dark btn-block">Cadastre-se</button>
+            </form>
+          </div>
       
-      form.addEventListener("submit", function(event) {
-        event.preventDefault();
-        mensagem.style.display = "block";
-        form.reset();
-      });
         <div class="caixa2">
       
     <br ><em style="color: whitesmoke;">Núcleo de Estudos Afro-Brasileiros-NEAB<br>
