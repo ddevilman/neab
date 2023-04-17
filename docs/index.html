@@ -1,109 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
     <title>Núcleo de Estudos Afro Brasileiros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      .colunas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  columns: 2;
-  column-gap: 50px;
-  grid-column-gap: 20px;
+        /* Default styles for all screen sizes */
+        .colunas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            columns: 2;
+            column-gap: 50px;
+            grid-column-gap: 20px;
+        }
+
+        .cssbuttons-io-button {
+            display: flex;
+            align-items: center;
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 0.7em 1.4em 0.7em 1.1em;
+            color: white;
+            background: #ad5389;
+            background: linear-gradient(0deg, rgb(3, 165, 17) 0%, rgb(7, 95, 14) 100%);
+            border: none;
+            box-shadow: 0 0.7em 1.5em -0.5em #0f832f98;
+            letter-spacing: 0.05em;
+            border-radius: 20em;
+        }
+
+        .cssbuttons-io-button svg {
+            margin-right: 6px;
+        }
+
+        .cssbuttons-io-button:hover {
+            box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+        }
+
+        .cssbuttons-io-button:active {
+            box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+        }
+
+        div.caixa1 {
+            display: inline-block;
+            border: 2px solid black;
+            column-count: 1;
+            box-sizing: border-box;
+            padding: 10vw;
+            background-color: rgba(0, 0, 0, 0.5);
+            mask-size: cover;
+        }
+
+        div.caixa2 {
+            display: inline-block;
+            border: 2px solid black;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        div {
+            margin-top: 0px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: white;
+        }
+
+        p {
+            color: whitesmoke;
+            font-size: 25px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(to right, yellow 0%, red 50%, green 80%);
+            text-align: center;
+        }
+
+        img {
+            align-content: center;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+        }
+
+        div.caixa4 {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .content-info {
+            color: whitesmoke;
+        }
+
+        .content-info img {
+            width: 100px;
+        }
+
+     /* Estilos para telas menores que 768px de largura */
+@media (max-width: 767px) {
+  .colunas {
+    columns: 1;
+    column-gap: 0;
+    grid-column-gap: 0;
   }
-      
-      .cssbuttons-io-button {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 0.7em 1.4em 0.7em 1.1em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(0deg, rgb(3, 165, 17) 0%, rgb(7, 95, 14) 100%);
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #0f832f98;
-  letter-spacing: 0.05em;
-  border-radius: 20em;
+
+  div.caixa1 {
+    padding: 5vw;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  body {
+    margin-top: -10%;
+  }
 }
 
-.cssbuttons-io-button svg {
-  margin-right: 6px;
+/* Estilos para telas maiores ou iguais a 768px de largura */
+@media (min-width: 768px) {
+  .colunas {
+    columns: 2;
+    column-gap: 50px;
+    grid-column-gap: 20px;
+  }
+
+  div.caixa1 {
+    padding: 10vw;
+  }
+
+  img {
+    width: 50vw;
+  }
+
+  body {
+    margin-top: -17%;
+  }
 }
 
-.cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
-}
 
-.cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
-}
 
-      div.caixa1 {
-        display: inline-block;
-
-        border: 2px solid black;
-        column-count: 1;
-        box-sizing: border-box;
-        padding: 10vw;
-        background-color: rgba(0, 0, 0, 0.5);
-        mask-size: cover;
-       
-      }
-
-      div.caixa2 {
-        display: inline-block;
-        border: 2px solid black;
-        box-sizing: border-box;
-        padding: 10px;
-        
-      }
-
-      div {
-        margin-top: 0px;
-        text-align: center;
-        display: inline-block;
-      }
-
-      h1 {
-        font-size: 60px;
-        color: white;
-      }
-
-      p {
-        color: whitesmoke;
-        font-size: 25px;
-      }
-
-      body {height: 100%;
-  margin: 0;
-  margin-top: -17%;
-  padding: 0;
-  overflow: hidden;
-        background: linear-gradient(to right, yellow 0%, red 50%, green 80%);
-        text-align: center;
-      }
-
-      img {
-        align-content: center;
-        border-radius: 20px;
-        width: 50vw;
-      }
-
-      div.caixa4 {
-        border: 1px solid black;
-        box-sizing: border-box;
-      }
-
-      .content-info {
-        color: whitesmoke;
-      }
-
-      .content-info img {
-        width: 100px;
-      }
     </style>
   </head>
 
