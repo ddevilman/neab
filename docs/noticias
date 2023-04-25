@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <title> Núcleo de Estudos Afro Brasileiros - Notícias </title>
+  <style>
+  
+  
+    div.caixa1 {display: inline-block;
+      box-sizing: border-box;
+    background-color: rgba(0%, 0%, 0%, 0.7);
+    border-radius: 10px;
+padding: 5px;
+text-align:center
+}
+
+
+    div {
+      margin-top: 1rem;
+      text-align: center;
+     
+      
+    }
+    h1 {font-size: 60px;
+      color: white;
+    }
+    
+    p{color:whitesmoke; font-size: 25px;}
+  body { background: linear-gradient(to right, yellow 0%, red 50%, green 80%); text-align:center};
+  content-info{color:whitesmoke}
+    img{border-radius: 40px;}
+    div.caixa4{ border: 1px solid black;
+      box-sizing: border-box;}
+  </style>
+</head>
+<body > 
+  <nav>
+    <ul >
+    </ul>
+  </nav>
+  <div class="caixa1">
+    <img src="https://files.ufgd.edu.br/arquivos/imagens/83/1598648896829_grande5576087721824468355.jpg" style="border: 5px solid black;" width="250px" height="100px" alt="Imagem do logo do NEAB" >
+
+  <div class="caixa" style="display: inline-flex;margin-left:28%;margin-bottom:6%;margin-top:5%">
+    <img src="https://pbs.twimg.com/media/FuggPEYWIBgqDRM?format=jpg&name=4096x4096" width="25%">
+    <p style="margin-left: 5%;"; class="text-align:center;text-align: justify"><br> <br> <br>O NEAB recebeu na ultima semana, uma doação de cinco<br> exemplares do livro <em> Negras Raizes Pantaneiras </em><br> doados pelo professor Drº Marcio Roberto da Silva Oliveira .<br>
+    O Núcleo agradece a doação de livros recebida<br> e convida a comunidade acadêmica <br>para nos visitar e conhecer as obras.</p>
+  </div>
+        
+       <
+        <strong style="color:whitesmoke;">
+        
+          VENHA AQUILOMBAR, CONHECER E PARTICIPAR! O ESPAÇO É NOSSO!</strong><br> </div>
+
+         
+  <footer><br> <br>Ⓡ Dev.il.man - Todos os direitos reservados</footer>
+</body>
+</html>
+
