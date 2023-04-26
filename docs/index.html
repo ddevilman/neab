@@ -9,8 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>  
 <style> 
 img {
-  max-width: 100%;
-  height: 20%;
+ max-width:100%;
+  height: 10%;
 }
 .colunas {
     display: flex;
@@ -118,7 +118,9 @@ img {
         @media screen and (max-width: 768px) {
   /* Ajuste as regras CSS aqui para telas menores */
   .colunas {
-    columns: 1;
+    columns: 3;
+    column-gap: 20px;
+    grid-column-gap: 10px;
   }
 
   html {
@@ -147,9 +149,12 @@ img {
     margin-top: -20%;
     margin-left:0%;
   }
-
+ 
+  .colunas {
+    column-gap: 20px;
+    grid-column-gap: 10px;}
 div.caixa2 {margin-top: -80%;
-align-items: flex-start;}
+display:inline-flex;}
 
       </style>
 </head>
@@ -167,7 +172,7 @@ align-items: flex-start;}
             <container>
             <div style="text-align: center;">
               <img src="https://files.ufgd.edu.br/arquivos/imagens/83/1598648896829_grande5576087721824468355.jpg"
-              style="border: 5px solid black; padding-top: 0px; width: 635px; height: 250px;"
+              style="border: 5px solid black; padding-top: 0px; width: 635px; height: 150px;"
               onmouseover="this.src='https://pbs.twimg.com/media/Ft2kndHXoAAikPb?format=jpg&name=medium'"
               onmouseout="this.src='https://files.ufgd.edu.br/arquivos/imagens/83/1598648896829_grande5576087721824468355.jpg'"
               ;>
@@ -187,8 +192,9 @@ align-items: flex-start;}
             <div class="row">
               <div class="col-md-4 d-flex justify-content-center align-items-center; box-sizing:border-box; margin-top:-2%">
                   <p></p>
-                <img style="width: 4cm; height: 4cm; margin-top:6cm" src="https://pbs.twimg.com/media/FtnJQ0lXgAcBH1m?format=png&name=small"/>
+                                 <img style="width: 4cm; height: 4cm; margin-top:6cm" src="https://seeklogo.com/images/U/ufgd-universidade-federal-da-grande-dourados-logo-BA008DE1C7-seeklogo.com.png"/>
               </div>
+              
               <div class="col-md-4 col-sm-6 col-12" style="padding:2cm;">
                 <div class="content-info">
                   
@@ -217,7 +223,7 @@ align-items: flex-start;}
                 </div>
               </div>
               <div class="col-md-4 d-flex justify-content-center align-items-center">
-                <img style="width: 135px" src="https://seeklogo.com/images/U/ufgd-universidade-federal-da-grande-dourados-logo-BA008DE1C7-seeklogo.com.png" />
+                <img style="width: 135px" src="https://pbs.twimg.com/media/FtnJQ0lXgAcBH1m?format=png&name=small" />
               </div>
             </div>
             <footer>Ⓡ Dev.il.man - Todos os direitos reservados</footer>
