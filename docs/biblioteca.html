@@ -10,41 +10,81 @@
     <link rel="stylesheet" href="css/app.css">
   
     <style>
-        img:hover {
-  width: 630px;
-  height: auto;}
+      img:hover {
+        width: 630px;
+        height: auto;
+      }
       
-      body{  background: linear-gradient(to right, yellow 0%, red 50%, green 80%);}
+      body {
+        background: linear-gradient(to right, yellow 0%, red 50%, green 80%);
+      }
       
       .form-control::placeholder {
         text-align: center;
       }
+    </style>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        function searchTable() {
+          let input = document.getElementById("searchInput");
+          let filter = input.value.toUpperCase();
+          let table = document.getElementById("tabela");
+          let tr = table.getElementsByTagName("tr");
+          
+          for (let i = 0; i < tr.length; i++) {
+            let td = tr[i].getElementsByTagName("td");
+            let found = false;
+              
+            for (let j = 0; j < td.length; j++) {
+              if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                found = true;
+                break;
+              }
+            }
+              
+            if (found) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
         
-            
-              </style>
+        let searchInput = document.getElementById("searchInput");
+        searchInput.addEventListener("input", searchTable);
+      });
+    </script>
   </head>
   
-<body style="margin-top:1rem; background-color: rgba(255, 255, 255, 0.8)">
-
+  <body style="margin-top:1rem; background-color: rgba(255, 255, 255, 0.8)">
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
-        <div class="large-12 cell";>
+        <div class="large-12 cell">
           <br>
         </div>
       </div>
 
-      <div class="grid-x grid-padding-x" style="text-align:center; justify-content: center; align-items:center; ">
-        <div class="large-12 cell"; style="margin-top:-1rem;">
-          <div class="callout" style="">
-        
+      <div class="grid-x grid-padding-x" style="text-align:center; justify-content: center; align-items:center;">
+        <div class="large-12 cell" style="margin-top:-1rem;">
+          <div class="callout">
             <h1>Biblioteca do NEAB</h1>
-            <table>
+           
+            <label for="pesquisa"><strong>Encontre o seu livro:</strong></label><br>
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+            
+            <br>
+            
+            <table id="tabela">
                 <thead>
                   <tr>
                     <th>Número de Registro</th>
                     <th style="text-align:center">Título do Livro</th>
                   </tr>
                 </thead>
+                <br>
+               <p>Biblioteca</p>
+<br>
                 <tbody>
                   <tr>
                     <td>1</td>
